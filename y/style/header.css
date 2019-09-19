@@ -11,3 +11,10 @@
 .main_dropdown_div {
     font-size: 150%;
 }
+
+@media screen and (min-width: 1000px) {
+    #main_menu {
+        margin-bottom: 0%;
+        margin-top: 1%;
+    }
+}

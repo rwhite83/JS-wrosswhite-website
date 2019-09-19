@@ -87,7 +87,7 @@ writerLink.setAttribute("aria-expanded", "false");
 writerLi.appendChild(writerLink);
 dropdownUl.appendChild(writerLi);
 
-// creating fourth dropdown
+// creating third dropdown
 var aboutLi = document.createElement('li');
 aboutLi.classList.add('nav-item');
 
@@ -103,6 +103,23 @@ aboutLink.setAttribute("aria-expanded", "false");
 //////
 aboutLi.appendChild(aboutLink);
 dropdownUl.appendChild(aboutLi);
+
+// creating fourth dropdown
+var writerLi = document.createElement('li');
+writerLi.classList.add('nav-item');
+
+////////
+var writerLink = document.createElement('a');
+writerLink.textContent = "Fun Stuff";
+writerLink.href = "fun_stuff.html";
+console.log(writerLink.innerText);
+writerLink.classList.add("nav-link");
+writerLink.id = "white_text";
+writerLink.setAttribute("aria-haspopup", "true");
+writerLink.setAttribute("aria-expanded", "false");
+//////
+writerLi.appendChild(writerLink);
+dropdownUl.appendChild(writerLi);
 
 // developerLi.appendChild(developerDropDiv);
 dropdownUl.appendChild(developerLi);
