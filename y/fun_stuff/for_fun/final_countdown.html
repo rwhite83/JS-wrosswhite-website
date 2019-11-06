@@ -34,80 +34,58 @@
             font-size: 600%;
             font-family: 'digital-clock-font';
         }
+        div {
+            text-align: center;
+        }
     </style>
 </head>
 
 <body>
+    <audio id="my_audio" src="https://firebasestorage.googleapis.com/v0/b/wrosswhite-website.appspot.com/o/clock_tick.mp3?alt=media&token=95d871eb-023d-4930-83af-1c9a642a3b5a" loop="loop"></audio>
     <p>
         <h1>TECHNICAL PROGRAMMING<br>COUNT DOWNS</h1>
     </p>
+    <br><br>
+    <div>
+        <button onclick="do_the_thing()" style="text-align: center;">Play the sound you know you should be
+            hearing</button>
+    </div>
+    <br><br>
     <p>
-        <h2>OS Lab Due</h2>
+        <h2>OS Project Proposal lab Due</h2>
     </p>
     <h3>
         <p id="os_lab">00:00:00:00</p>
     </h3>
     <p>
-        <h2>ASP.NET Lab Due</h2>
-    </p>
-    <h3>
-        <p id="asp_lab">00:00:00:00</p>
-    </h3>
-    <p>
-        <h2>Web Dev Lab Due</h2>
+
+        <h2>Web Dev lab Due</h2>
     </p>
     <h3>
         <p id="web_dev_lab">00:00:00:00</p>
     </h3>
+
     <p>
-        <h2>Druids Milestone II</h2>
+        <h2>BLAW Homework Due</h2>
     </p>
     <h3>
-        <p id="druids_ii">00:00:00:00</p>
+        <p id="blaw_lab">00:00:00:00</p>
+    </h3>
+    <p>
+
+        <h2>Stats Homework Due</h2>
+    </p>
+    <h3>
+        <p id="stats_homework">00:00:00:00</p>
     </h3>
 
     <p>
-        <h2>OS Midterm</h2>
+        <h2>Stats Lab 7 Due</h2>
     </p>
     <h3>
-        <p id="os_midterm">00:00:00:00</p>
+        <p id="stats_lab_7">00:00:00:00</p>
     </h3>
-    <p>
-        <h2>BLAW Midterm</h2>
-    </p>
-    <h3>
-        <p id="blaw_midterm">00:00:00:00</p>
-    </h3>
-    <p>
-        <h2>Tech Pro Midterm</h2>
-    </p>
-    <h3>
-        <p id="tech_pro_midterm">00:00:00:00</p>
-    </h3>
-    <p>
-        <h2>Stats Midterm</h2>
-    </p>
-    <h3>
-        <p id="stats_midterm">00:00:00:00</p>
-    </h3>
-    <p>
-        <h2>Web Dev Midterm</h2>
-    </p>
-    <h3>
-        <p id="web_dev_midterm">00:00:00:00</p>
-    </h3>
-    <p>
-        <h2>Stats Lab Due</h2>
-    </p>
-    <h3>
-        <p id="stats_lab">00:00:00:00</p>
-    </h3>
-    <p>
-        <h2>Web Dev Assignment Due</h2>
-    </p>
-    <h3>
-        <p id="web_dev_asmt">00:00:00:00</p>
-    </h3>
+
     <p>
         <h2>F.I.O.N.A. Medium Fidelity Prototype Due</h2>
     </p>
@@ -115,16 +93,74 @@
         <p id="fiona_medium">00:00:00:00</p>
     </h3>
     <p>
-        <h2>End of Classes</h2>
+        <h2>Stas Lab 8 Due</h2>
     </p>
     <h3>
-        <p id="class_end" style="color: green;">00:00:00:00</p>
+        <p id="stats_lab_8">00:00:00:00</p>
     </h3>
+
+    <p>
+        <h2>Stas Lab 9 Due</h2>
+    </p>
+    <h3>
+        <p id="stats_lab_9">00:00:00:00</p>
+    </h3>
+
+    <p>
+        <h2>Floral Panic Presentation</h2>
+    </p>
+    <h3>
+        <p id="druids_presentation">00:00:00:00</p>
+    </h3>
+
+    <p>
+        <h2>F.I.O.N.A. Presentation</h2>
+    </p>
+    <h3>
+        <p id="fiona_presentation">00:00:00:00</p>
+    </h3>
+    <p>
+
+        <h2>F.I.O.N.A. Minutes Due</h2>
+    </p>
+    <h3>
+        <p id="fiona_minutes">00:00:00:00</p>
+    </h3>
+    <p>
+
+        <h2>End Of Classes</h2>
+    </p>
+    <h3>
+        <p id="class_end" style="color: green; font-size: 150%;">00:00:00:00</p>
+    </h3>
+    <p>
+
+        <h2>Stas Lab 10 Due</h2>
+    </p>
+    <h3>
+        <p id="stats_lab_10">00:00:00:00</p>
+    </h3>
+
+    <p>
+        <h2>F.I.O.N.A. Evaluation</h2>
+    </p>
+    <h3>
+        <p id="fiona_evaluation">00:00:00:00</p>
+    </h3>
+
+    <p>
+        <h2>F.I.O.N.A. High Fidelity Prototype Due</h2>
+    </p>
+    <h3>
+        <p id="fiona_high">00:00:00:00</p>
+    </h3>
+
     <p>
         <h2>End of CST Program</h2>
     </p>
     <h3>
-        <p id="cst_end" style="color: green; font-size: 150%;">00:00:00:00</p>
+        <p id="cst_end" style="color: green; font-size: 150%;">
+            00:00:00:00</p>
     </h3>
 
 
@@ -172,20 +208,29 @@
             }, 1000);
         }
 
-        countdown("Oct 13, 2019 23:59:00", "os_lab")
-        countdown("Oct 16, 2019 23:30:00", "asp_lab")
-        countdown("Oct 16, 2019 23:59:00", "web_dev_lab")
-        countdown("Oct 17, 2019 10:30:00", "druids_ii")
-        countdown("Oct 21, 2019 13:30:00", "os_midterm")
-        countdown("Oct 22, 2019 10:30:00", "blaw_midterm")
-        countdown("Oct 23, 2019 23:59:00", "tech_pro_midterm")
-        countdown("Oct 25, 2019 08:30:00", "stats_midterm")
-        countdown("Oct 25, 2019 12:30:00", "web_dev_midterm")
-        countdown("Oct 31, 2019 08:30:00", "stats_lab")
-        countdown("Oct 31, 2019 12:30:00", "web_dev_asmt")
-        countdown("Nov 14, 2019 23:59:59", "fiona_medium")
+        countdown("Nov 05, 2019 08:30:59", "stats_lab_6")
+        countdown("Nov 05, 2019 08:30:59", "stats_quiz")
+        countdown("Nov 05, 2019 23:59:00", "os_lab")
+        countdown("Nov 06, 2019 23:59:00", "web_dev_lab")
+        countdown("Nov 08, 2019 08:30:00", "blaw_lab")
+        countdown("Nov 15, 2019 12:30:59", "stats_homework")
+        countdown("Nov 19, 2019 08:30:59", "stats_lab_7")
+        countdown("Nov 19, 2019 23:59:59", "fiona_medium")
+        countdown("Nov 27, 2019 08:30:59", "stats_lab_8")
+        countdown("Dec 04, 2019 08:30:59", "stats_lab_9")
+        countdown("Dec 04, 2019 23:30:59", "druids_presentation")
+        countdown("Dec 05, 2019 23:30:59", "fiona_presentation")
+        countdown("Dec 06, 2019 23:30:59", "fiona_minutes")
         countdown("Dec 06, 2019 12:30:00", "class_end")
+        countdown("Dec 08, 2019 10:30:59", "stats_lab_10")
+        countdown("Dec 10, 2019 23:30:59", "fiona_evaluation")
+        countdown("Dec 10, 2019 23:30:59", "fiona_high")
         countdown("Dec 13, 2019 18:30:00", "cst_end")
+
+        function do_the_thing() {
+            document.getElementById("my_audio").play();
+        }
+
 
     </script>
     </script>
