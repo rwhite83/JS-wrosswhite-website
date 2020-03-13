@@ -74,19 +74,6 @@ dropdownUl.appendChild(developerLi);
 var writerLi = document.createElement('li');
 writerLi.classList.add('nav-item');
 
-////////
-var writerLink = document.createElement('a');
-writerLink.textContent = "Writer";
-writerLink.href = "writer.html";
-console.log(writerLink.innerText);
-writerLink.classList.add("nav-link");
-writerLink.id = "white_text";
-writerLink.setAttribute("aria-haspopup", "true");
-writerLink.setAttribute("aria-expanded", "false");
-//////
-writerLi.appendChild(writerLink);
-dropdownUl.appendChild(writerLi);
-
 // creating third dropdown
 var aboutLi = document.createElement('li');
 aboutLi.classList.add('nav-item');
@@ -95,7 +82,6 @@ aboutLi.classList.add('nav-item');
 var aboutLink = document.createElement('a');
 aboutLink.textContent = "About Me";
 aboutLink.href = "about.html";
-console.log(writerLink.innerText);
 aboutLink.classList.add("nav-link");
 aboutLink.id = "white_text";
 aboutLink.setAttribute("aria-haspopup", "true");
@@ -105,21 +91,21 @@ aboutLi.appendChild(aboutLink);
 dropdownUl.appendChild(aboutLi);
 
 // creating fourth dropdown
-var writerLi = document.createElement('li');
-writerLi.classList.add('nav-item');
+var updatesLi = document.createElement('li');
+updatesLi.classList.add('nav-item');
 
 ////////
-var writerLink = document.createElement('a');
-writerLink.textContent = "Fun Stuff";
-writerLink.href = "fun_stuff.html";
-console.log(writerLink.innerText);
-writerLink.classList.add("nav-link");
-writerLink.id = "white_text";
-writerLink.setAttribute("aria-haspopup", "true");
-writerLink.setAttribute("aria-expanded", "false");
+var updatesLink = document.createElement('a');
+updatesLink.textContent = "Updates";
+updatesLink.href = "updates.html";
+console.log(updatesLink.innerText);
+updatesLink.classList.add("nav-link");
+updatesLink.id = "white_text";
+updatesLink.setAttribute("aria-haspopup", "true");
+updatesLink.setAttribute("aria-expanded", "false");
 //////
-writerLi.appendChild(writerLink);
-dropdownUl.appendChild(writerLi);
+updatesLi.appendChild(updatesLink);
+dropdownUl.appendChild(updatesLi);
 
 // developerLi.appendChild(developerDropDiv);
 dropdownUl.appendChild(developerLi);
