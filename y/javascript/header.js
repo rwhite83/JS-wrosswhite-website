@@ -71,8 +71,21 @@ developerLi.appendChild(developerLink);
 dropdownUl.appendChild(developerLi);
 
 // creating second dropdown
-var writerLi = document.createElement('li');
-writerLi.classList.add('nav-item');
+var launchLi = document.createElement('li');
+launchLi.classList.add('nav-item');
+
+////////
+var launchLink = document.createElement('a');
+launchLink.textContent = "Launch";
+launchLink.href = "launch.html";
+console.log(launchLink.innerText);
+launchLink.classList.add("nav-link");
+launchLink.id = "white_text";
+launchLink.setAttribute("aria-haspopup", "true");
+launchLink.setAttribute("aria-expanded", "false");
+//////
+launchLi.appendChild(launchLink);
+dropdownUl.appendChild(launchLi);
 
 // creating third dropdown
 var aboutLi = document.createElement('li');
