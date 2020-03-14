@@ -76,7 +76,7 @@ launchLi.classList.add('nav-item');
 
 ////////
 var launchLink = document.createElement('a');
-launchLink.textContent = "Launch";
+launchLink.textContent = "Launch Reboot";
 launchLink.href = "launch.html";
 console.log(launchLink.innerText);
 launchLink.classList.add("nav-link");
